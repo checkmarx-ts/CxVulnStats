@@ -3,7 +3,7 @@
 CxVulStats is a Native python script to fetch vulnerability stats of a single projects OR all projects in the configured user's scope.
 
 # Demo
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/312487)
+[![asciicast](https://asciinema.org/a/312487.svg)](https://asciinema.org/a/312487?autoplay=1)
 
 # Configuration
 Configuration needs to be performed in the `cx.ini` file. Below is a list of the parameters to be filled.
