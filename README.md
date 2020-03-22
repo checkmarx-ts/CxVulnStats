@@ -29,3 +29,6 @@ python vulnstats.py -p "<name_of_project_on_checkmarx>"
 ```
 python vulnstats.py --all
 ```
+
+# Vulnerability Statistics Location
+* v0.0.1 produces statistics to a plaintext file `CxVulnStats.txt` in the user's home directory
