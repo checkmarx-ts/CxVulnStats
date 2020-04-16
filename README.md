@@ -1,6 +1,7 @@
 # CxVulnStats
 
-- CxVulStats is collection Native python script to fetch vulnerability statistics of a single projects OR all projects on Checkmarx CxSAST.
+CxVulStats is collection Native python script to fetch vulnerability statistics of a single projects OR all projects on Checkmarx CxSAST.
+
 -------------------
 
 # Demo
@@ -18,10 +19,13 @@
   * Vulnerability summary of all projects in-scope of the user configured.
   * ScanID, ProjectID (ID), Project Name, Number of vulnerabilities (High, Low, Medium, Information only).
   * Checkmarx Statistics calculation date.
+
 -------------------
 
 # Checkmarx CxSAST Version
+
 This script has been tailored to work for CxSAST 8.9 and will work for CxSAST 9.0. Usage of plaintext password in the Configuration file may change.
+
 -------------------
 
 # Configuration
@@ -35,23 +39,28 @@ Configuration needs to be performed in the `cx.ini` file. Below is a list of the
 - Please do not append items to the scope unless you are aware of your goals. This default scope ensures that only Checkmarx CxSAST API is authorized for the OUAUTH2 Token `scope = sast_rest_api`
 - OIDC Client ID`client_id = resource_owner_client`
 - OIDC Client Secret `client_secret = 012ABCDEF-GHIJ-KLMN-OPQR-STUVWXYZZZZZ`
+
 -------------------
 
 # Misc.
-- The file is appended with all future runs to ensure that a time-line of vulnerability-detection can be established with `date-time` as first dimenion and `vulnerabilitiy severity counts` as the second dimension.
 
-- As such, this script must be run on cadence to ensure that data is polulated on continously and that the timeline is observable on `Splunk` or `equivalent dashboards`.
+The file is appended with all future runs to ensure that a time-line of vulnerability-detection can be established with `date-time` as first dimenion and `vulnerabilitiy severity counts` as the second dimension.
+
+As such, this script must be run on cadence to ensure that data is polulated on continously and that the timeline is observable on `Splunk` or `equivalent dashboards`.
+
 -------------------
 
 # Running
-* To get vulnerability stats of a single project
+
+1. To get vulnerability stats of a single project
 ```
 python vulnstats.py -p "<name_of_project_on_checkmarx>"
 ```
-* To get vulnerability stats of all projects
+2.  To get vulnerability stats of all projects
 ```
 python vulnstats.py --all
 ```
+
 -------------------
 
 # Vulnerability Statistics Location
