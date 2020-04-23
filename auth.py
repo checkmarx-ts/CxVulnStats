@@ -19,7 +19,6 @@ class PerformAuth(object):
             'Authorization': ''
         }
         self.https_flag = False if self.config['cx']['https_flag'] == 'False' else True
-        print(self.https_flag)
         self.host = self.config['cx']['host']
  
         self.payload = None
