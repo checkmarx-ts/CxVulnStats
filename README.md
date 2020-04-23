@@ -27,6 +27,9 @@ CxVulStats is collection Native python script to fetch vulnerability statistics 
 This script has been tailored to work for CxSAST 8.9 and will work for CxSAST 9.0. Usage of plaintext password in the Configuration file may change.
 
 -------------------
+# To-Do
+
+-------------------
 
 # Configuration
 Configuration needs to be performed in the `cx.ini` file. Below is a list of the parameters to be filled.
